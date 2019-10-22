@@ -21,8 +21,8 @@ description: namespace及name详细说明
 | [Pause](she-bei-kong-zhi.md#pause-qing-qiu) | 停止 |
 | [SetBrightness](she-bei-kong-zhi.md#setbrightness-qing-qiu) | 设置亮度 |
 | [IncreaseBrightness](she-bei-kong-zhi.md#increasebrightness-qing-qiu) | 增大亮度 |
-| DecreaseBrightness | 调小亮度 |
-| SetColor | 设置颜色 |
+| [DecreaseBrightness](she-bei-kong-zhi.md#decreasebrightness-qing-qiu) | 调小亮度 |
+| [SetColor](she-bei-kong-zhi.md#setcolor-qing-qiu) | 设置颜色 |
 | SetTemperature | 设置温度 |
 | IncreaseTemperature | 调高温度 |
 | DecreaseTemperature | 调低温度 |
