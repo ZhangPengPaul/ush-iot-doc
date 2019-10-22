@@ -506,3 +506,50 @@ deltaBrightness信息
 }
 ```
 
+### DecreaseBrightness请求
+
+减小亮度
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | DecreaseBrightness |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| accessToken | String | IoT厂商接口访问access token | true |
+| deviceId | String | 设备唯一ID | true |
+| deltaBrightness | JSON Object | 亮度变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
+
+deltaBrightness信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deltaValue | String | 变化的亮度值，根据deltaValueType不同，含义不同 | true |
+| deltaValueType | String | deltaValue类型，有如下几种：int（整数类型），percent（百分比） | true |
+
+#### 请求示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseBrightness",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "deltaBrightness":{
+            "deltaValue":"100",
+            "deltaValueType":"int"
+        }
+    }
+}
+```
+
