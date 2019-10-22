@@ -82,7 +82,7 @@ description: 用于查找用户可用的设备、可以使用的场景模式等�
     "properties":[
         {
             "name":"PowerState",
-            "value":"on"
+            "value":"ON"
         },
         {
             "name":"Temperature",
@@ -115,7 +115,7 @@ description: 用于查找用户可用的设备、可以使用的场景模式等�
                 "properties":[
                     {
                         "name":"PowerState",
-                        "value":"on"
+                        "value":"ON"
                     },
                     {
                         "name":"Temperature",
@@ -139,7 +139,7 @@ description: 用于查找用户可用的设备、可以使用的场景模式等�
                 "properties":[
                     {
                         "name":"PowerState",
-                        "value":"on"
+                        "value":"ON"
                     },
                     {
                         "name":"Temperature",
