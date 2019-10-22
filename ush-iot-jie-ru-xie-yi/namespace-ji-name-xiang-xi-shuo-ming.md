@@ -23,7 +23,7 @@ description: namespace及name详细说明
 | [IncreaseBrightness](she-bei-kong-zhi.md#increasebrightness-qing-qiu) | 增大亮度 |
 | [DecreaseBrightness](she-bei-kong-zhi.md#decreasebrightness-qing-qiu) | 调小亮度 |
 | [SetColor](she-bei-kong-zhi.md#setcolor-qing-qiu) | 设置颜色 |
-| SetTemperature | 设置温度 |
+| [SetTemperature](she-bei-kong-zhi.md#settemperature-qing-qiu) | 设置温度 |
 | IncreaseTemperature | 调高温度 |
 | DecreaseTemperature | 调低温度 |
 | SetMode | 设置模式 |
