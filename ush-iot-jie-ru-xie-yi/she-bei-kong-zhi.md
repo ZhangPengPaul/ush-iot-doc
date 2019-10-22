@@ -553,3 +553,62 @@ deltaBrightness信息
 }
 ```
 
+### DecreaseBrightness响应
+
+减小亮度响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | DecreaseBrightnessResponse |
+
+#### payload正常响应信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+
+#### payload异常响应信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+| errorCode | String | 错误码，详见//TODO | true |
+| errorMessage | String | 错误信息描述，详见//TODO | true |
+
+#### 正常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseBrightnessResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
+    }
+}
+```
+
+#### 异常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseBrightnessResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
+        "errorMessage":"device not found"
+    }
+}
+```
+
