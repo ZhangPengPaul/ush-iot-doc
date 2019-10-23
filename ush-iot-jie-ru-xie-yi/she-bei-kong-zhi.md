@@ -4,7 +4,7 @@ description: 设备控制对智能家居设备进行控制
 
 # 设备控制
 
-## 打开关闭设备
+## 开关控制
 
 打开关闭设备包括打开设备、关闭设备、定时关闭设备、停止设备等操作。
 
@@ -716,7 +716,7 @@ color信息
 }
 ```
 
-## 温度设置
+## 温度控制
 
 升高或者降低设备的温度，也可以设定指定的温度。
 
@@ -1034,6 +1034,55 @@ deltaTemperature信息
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
         "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
         "errorMessage":"device not found"
+    }
+}
+```
+
+## 模式控制
+
+单设备模式或多设备联动模式的控制
+
+### SetMode请求
+
+模式设置
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | SetMode |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| accessToken | String | IoT厂商接口访问access token | true |
+| deviceId | String | 设备唯一ID | true |
+| mode | JSON Object | 模式信息 | true |
+
+mode信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| value | String | 模式类型，支持的模式见[模式列表](she-bei-shu-xing-shuo-ming.md#mo-shi-mode) | true |
+
+#### 请求示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"SetMode",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "mode":{
+            "value":"AUTO"
+        }
     }
 }
 ```
