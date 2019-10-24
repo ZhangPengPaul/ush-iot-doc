@@ -24,18 +24,18 @@ description: namespace及name详细说明
 | [DecreaseBrightness](she-bei-kong-zhi.md#decreasebrightness-qing-qiu) | 调小亮度 |
 | [SetColor](she-bei-kong-zhi.md#setcolor-qing-qiu) | 设置颜色 |
 | [SetTemperature](she-bei-kong-zhi.md#settemperature-qing-qiu) | 设置温度 |
-| IncreaseTemperature | 调高温度 |
-| DecreaseTemperature | 调低温度 |
-| SetMode | 设置模式 |
-| SetWindSpeed | 设置风速 |
-| IncreaseWindSpeed | 调大风速 |
-| DecreaseWindSpeed | 调小风速 |
-| SetVolume | 设置音量 |
-| IncreaseVolume | 调大音量 |
-| DecreaseVolume | 调小音量 |
-| SetChannel | 设置频道 |
-| IncreaseChannel | 下一个频道 |
-| DecreaseChannel | 上一个频道 |
+| [IncreaseTemperature](she-bei-kong-zhi.md#increasetemperature-qing-qiu) | 调高温度 |
+| [DecreaseTemperature](she-bei-kong-zhi.md#decreasetemperature-qing-qiu) | 调低温度 |
+| [SetMode](she-bei-kong-zhi.md#setmode-qing-qiu) | 设置模式 |
+| [SetWindSpeed](she-bei-kong-zhi.md#setwindspeed-qing-qiu) | 设置风速 |
+| [IncreaseWindSpeed](she-bei-kong-zhi.md#increasewindspeed-qing-qiu) | 调大风速 |
+| [DecreaseWindSpeed](she-bei-kong-zhi.md#decreasewindspeed-qing-qiu) | 调小风速 |
+| [SetVolume](she-bei-kong-zhi.md#setvolume-qing-qiu) | 设置音量 |
+| [IncreaseVolume](she-bei-kong-zhi.md#increasevolume-qing-qiu) | 调大音量 |
+| [DecreaseVolume](she-bei-kong-zhi.md#decreasevolume-qing-qiu) | 调小音量 |
+| [SetChannel](she-bei-kong-zhi.md#setchannel-qing-qiu) | 设置频道 |
+| [IncreaseChannel](she-bei-kong-zhi.md#increasechannel-qing-qiu) | 下一个频道 |
+| [DecreaseChannel](she-bei-kong-zhi.md#decreasechannel-qing-qiu) | 上一个频道 |
 
 ### 设备属性及状态查询（对应USH.IoT.Device.Query）
 
