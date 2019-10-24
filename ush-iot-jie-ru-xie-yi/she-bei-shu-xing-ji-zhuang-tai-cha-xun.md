@@ -107,3 +107,98 @@ description: 查询设备的属性及状态信息
 }
 ```
 
+## 查询单个属性（以温度为例）
+
+查询设备的指定属性
+
+### 查询请求
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Query |
+| name | Temperature，其他属性查询参考：[name说明](namespace-ji-name-xiang-xi-shuo-ming.md#she-bei-shu-xing-ji-zhuang-tai-cha-xun-dui-ying-ushiotdevicequery) |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| accessToken | String | IoT厂商接口访问access token | true |
+| deviceId | String | 设备唯一ID | true |
+
+#### 请求示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Query",
+        "name":"Temperature",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
+    }
+}
+```
+
+### 查询响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Query |
+| name | TemperatureResponse，（其他属性查询响应name一律为“请求name值+Response”，如：查询颜色，请求name=Color，则响应name=ColorResponse） |
+
+#### payload响应信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+| properties | JSON Object Array | 设备支持的属性状态列表，详见：[设备属性说明](she-bei-shu-xing-shuo-ming.md) | true |
+
+设备属性properties信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| name | String | 属性名 | true |
+| value | String | 属性值 | true |
+
+属性示例
+
+```javascript
+{
+    "properties":[
+        {
+            "name":"Temperature",
+            "value":"20"
+        }
+    ]
+}
+```
+
+#### 响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Query",
+        "name":"TemperatureResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxx",
+        "properties":[
+            {
+                "name":"Temperature",
+                "value":"20"
+            }
+        ]
+    }
+}
+```
+
