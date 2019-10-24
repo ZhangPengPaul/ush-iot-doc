@@ -1409,3 +1409,325 @@ deltaWindSpeed信息
 }
 ```
 
+## 音量控制
+
+用于控制设备音量
+
+### SetVolume请求
+
+设置音量
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | SetVolume |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| accessToken | String | IoT厂商接口访问access token | true |
+| deviceId | String | 设备唯一ID | true |
+| volume | JSON Object | 音量信息 | true |
+
+volume信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| value | String | 音量值，根据valueType不同，含义不同，//TODO，MAX，MIN等待定义 | true |
+| valueType | String | value类型，有如下几种：int（整数类型），//TODO，HIGH，LOW等待定义 | true |
+
+#### 请求示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"SetVolume",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "volum":{
+            "value":"10",
+            "valueType":"int"
+        }
+    }
+}
+```
+
+### SetVolume响应
+
+设置音量响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | SetVolumeResponse |
+
+#### payload正常响应信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+
+#### payload异常响应信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+| errorCode | String | 错误码，详见//TODO | true |
+| errorMessage | String | 错误信息描述，详见//TODO | true |
+
+#### 正常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"SetVolumeResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
+    }
+}
+```
+
+#### 异常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"SetVolumeResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
+        "errorMessage":"device not found"
+    }
+}
+```
+
+### IncreaseVolume请求
+
+增大音量
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | IncreaseVolume |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| accessToken | String | IoT厂商接口访问access token | true |
+| deviceId | String | 设备唯一ID | true |
+| deltaVolume | JSON Object | 音量变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
+
+deltaVolume信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deltaValue | String | 变化的音量值，根据deltaValueType不同，含义不同 | true |
+| deltaValueType | String | deltaValue类型，有如下几种：int（整数类型），percent（百分比） | true |
+
+#### 请求示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"IncreaseVolume",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "deltaWindSpeed":{
+            "deltaValue":"5",
+            "deltaValueType":"int"
+        }
+    }
+}
+```
+
+### IncreaseVolume响应
+
+增大音量响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | IncreaseVolumeResponse |
+
+#### payload正常信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+
+#### payload异常信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+| errorCode | String | 错误码，详见//TODO | true |
+| errorMessage | String | 错误信息描述，详见//TODO | true |
+
+#### 正常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"IncreaseVolumeResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
+    }
+}
+```
+
+#### 异常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"IncreaseVolumeResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
+        "errorMessage":"device not found"
+    }
+}
+```
+
+### DecreaseVolume请求
+
+减小音量
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | DecreaseVolume |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| accessToken | String | IoT厂商接口访问access token | true |
+| deviceId | String | 设备唯一ID | true |
+| deltaVolume | JSON Object | 音量变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
+
+deltaVolume信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deltaValue | String | 变化的音量值，根据deltaValueType不同，含义不同 | true |
+| deltaValueType | String | deltaValue类型，有如下几种：int（整数类型），percent（百分比） | true |
+
+#### 请求示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseVolume",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "deltaWindSpeed":{
+            "deltaValue":"5",
+            "deltaValueType":"int"
+        }
+    }
+}
+```
+
+### DecreaseVolume响应
+
+减小音量响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | DecreaseVolumeResponse |
+
+#### payload正常信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+
+#### payload异常信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+| errorCode | String | 错误码，详见//TODO | true |
+| errorMessage | String | 错误信息描述，详见//TODO | true |
+
+#### 正常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseVolumeResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
+    }
+}
+```
+
+#### 异常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseVolumeResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
+        "errorMessage":"device not found"
+    }
+}
+```
+
