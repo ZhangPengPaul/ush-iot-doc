@@ -54,21 +54,13 @@ description: 设备控制对智能家居设备进行控制
 | namespace | USH.IoT.Device.Control |
 | name | TurnOnResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -80,24 +72,6 @@ description: 设备控制对智能家居设备进行控制
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"TurnOnResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -148,21 +122,13 @@ description: 设备控制对智能家居设备进行控制
 | namespace | USH.IoT.Device.Control |
 | name | TurnOffResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -174,24 +140,6 @@ description: 设备控制对智能家居设备进行控制
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"TurnOffResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -242,21 +190,13 @@ description: 设备控制对智能家居设备进行控制
 | namespace | USH.IoT.Device.Control |
 | name | PauseResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -268,24 +208,6 @@ description: 设备控制对智能家居设备进行控制
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"PauseResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -352,21 +274,13 @@ brightness信息说明
 | namespace | USH.IoT.Device.Control |
 | name | SetBrightnessResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -378,24 +292,6 @@ brightness信息说明
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"SetBrightnessResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -458,21 +354,13 @@ deltaBrightness信息
 | namespace | USH.IoT.Device.Control |
 | name | IncreaseBrightnessResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -484,24 +372,6 @@ deltaBrightness信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"IncreaseBrightnessResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -564,21 +434,13 @@ deltaBrightness信息
 | namespace | USH.IoT.Device.Control |
 | name | DecreaseBrightnessResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -590,24 +452,6 @@ deltaBrightness信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"DecreaseBrightnessResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -668,21 +512,13 @@ color信息
 | namespace | USH.IoT.Device.Control |
 | name | SetColorResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -694,24 +530,6 @@ color信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"SetColorResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -778,21 +596,13 @@ temperature信息
 | namespace | USH.IoT.Device.Control |
 | name | SetTemperatureResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -804,24 +614,6 @@ temperature信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"SetTemperatureResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -884,21 +676,13 @@ deltaTemperature信息
 | namespace | USH.IoT.Device.Control |
 | name | IncreaseTemperatureResponse |
 
-#### payload正常信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -910,24 +694,6 @@ deltaTemperature信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"IncreaseTemperatureResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -990,21 +756,13 @@ deltaTemperature信息
 | namespace | USH.IoT.Device.Control |
 | name | DecreaseTemperatureResponse |
 
-#### payload正常信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1016,24 +774,6 @@ deltaTemperature信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"DecreaseTemperatureResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -1083,6 +823,39 @@ mode信息
         "mode":{
             "value":"AUTO"
         }
+    }
+}
+```
+
+### SetMode响应
+
+设置模式响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | SetModeResponse |
+
+#### payload响应信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+
+#### 响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"SetWindSpeedResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
     }
 }
 ```
@@ -1149,21 +922,13 @@ windSpeed信息
 | namespace | USH.IoT.Device.Control |
 | name | SetWindSpeedResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1175,24 +940,6 @@ windSpeed信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"SetWindSpeedResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -1255,21 +1002,13 @@ deltaWindSpeed信息
 | namespace | USH.IoT.Device.Control |
 | name | IncreaseWindSpeedResponse |
 
-#### payload正常信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1281,24 +1020,6 @@ deltaWindSpeed信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"IncreaseWindSpeedResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -1361,21 +1082,13 @@ deltaWindSpeed信息
 | namespace | USH.IoT.Device.Control |
 | name | DecreaseWindSpeedResponse |
 
-#### payload正常信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1387,24 +1100,6 @@ deltaWindSpeed信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"DecreaseWindSpeedResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -1471,21 +1166,13 @@ volume信息
 | namespace | USH.IoT.Device.Control |
 | name | SetVolumeResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1497,24 +1184,6 @@ volume信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"SetVolumeResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -1577,21 +1246,13 @@ deltaVolume信息
 | namespace | USH.IoT.Device.Control |
 | name | IncreaseVolumeResponse |
 
-#### payload正常信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1603,24 +1264,6 @@ deltaVolume信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"IncreaseVolumeResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -1683,13 +1326,11 @@ deltaVolume信息
 | namespace | USH.IoT.Device.Control |
 | name | DecreaseVolumeResponse |
 
-#### payload正常信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
-
-#### payload异常信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
@@ -1697,7 +1338,7 @@ deltaVolume信息
 | errorCode | String | 错误码，详见//TODO | true |
 | errorMessage | String | 错误信息描述，详见//TODO | true |
 
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1709,24 +1350,6 @@ deltaVolume信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"DecreaseVolumeResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -1793,21 +1416,13 @@ channel信息
 | namespace | USH.IoT.Device.Control |
 | name | SetChannelResponse |
 
-#### payload正常响应信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常响应信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1819,24 +1434,6 @@ channel信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"SetChannelResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -1899,21 +1496,13 @@ deltaChannel信息
 | namespace | USH.IoT.Device.Control |
 | name | IncreaseChannelResponse |
 
-#### payload正常信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -1925,24 +1514,6 @@ deltaChannel信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"IncreaseChannelResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
@@ -2005,21 +1576,13 @@ deltaChannel信息
 | namespace | USH.IoT.Device.Control |
 | name | DecreaseChannelResponse |
 
-#### payload正常信息
+#### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 
-#### payload异常信息
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
-
-#### 正常响应示例
+#### 响应示例
 
 ```javascript
 {
@@ -2031,24 +1594,6 @@ deltaChannel信息
     },
     "payload":{
         "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
-    }
-}
-```
-
-#### 异常响应示例
-
-```javascript
-{
-    "header":{
-        "namespace":"USH.IoT.Device.Control",
-        "name":"DecreaseChannelResponse",
-        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "payloadVersion":"1"
-    },
-    "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
-        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
-        "errorMessage":"device not found"
     }
 }
 ```
