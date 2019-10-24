@@ -1087,3 +1087,113 @@ mode信息
 }
 ```
 
+## 风速控制
+
+用于控制设备风速
+
+### SetWindSpeed请求
+
+设置风速
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | SetWindSpeed |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| accessToken | String | IoT厂商接口访问access token | true |
+| deviceId | String | 设备唯一ID | true |
+| windSpeed | JSON Object | 风速信息 | true |
+
+windSpeed信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| value | String | 风速值，根据valueType不同，含义不同，//TODO，HIGH，LOW等待定义 | true |
+| valueType | String | value类型，有如下几种：int（整数类型），//TODO，HIGH，LOW等待定义 | true |
+
+#### 请求示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"SetWindSpeed",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "windSpeed":{
+            "value":"10",
+            "valueType":"int"
+        }
+    }
+}
+```
+
+### SetWindSpeed响应
+
+设置风速响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | SetWindSpeedResponse |
+
+#### payload正常响应信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+
+#### payload异常响应信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+| errorCode | String | 错误码，详见//TODO | true |
+| errorMessage | String | 错误信息描述，详见//TODO | true |
+
+#### 正常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"SetWindSpeedResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
+    }
+}
+```
+
+#### 异常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"SetWindSpeedResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
+        "errorMessage":"device not found"
+    }
+}
+```
+
