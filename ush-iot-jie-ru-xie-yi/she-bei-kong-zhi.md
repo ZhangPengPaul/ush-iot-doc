@@ -1303,3 +1303,109 @@ deltaWindSpeed信息
 }
 ```
 
+### DecreaseWindSpeed请求
+
+减小风速
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | DecreaseWindSpeed |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| accessToken | String | IoT厂商接口访问access token | true |
+| deviceId | String | 设备唯一ID | true |
+| deltaWindSpeed | JSON Object | 风速变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
+
+deltaWindSpeed信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deltaValue | String | 变化的风速值，根据deltaValueType不同，含义不同 | true |
+| deltaValueType | String | deltaValue类型，有如下几种：int（整数类型），percent（百分比） | true |
+
+#### 请求示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseWindSpeed",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "deltaWindSpeed":{
+            "deltaValue":"5",
+            "deltaValueType":"int"
+        }
+    }
+}
+```
+
+### DecreaseWindSpeed响应
+
+减小风速响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | USH.IoT.Device.Control |
+| name | DecreaseWindSpeedResponse |
+
+#### payload正常信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+
+#### payload异常信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+| errorCode | String | 错误码，详见//TODO | true |
+| errorMessage | String | 错误信息描述，详见//TODO | true |
+
+#### 正常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseWindSpeedResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
+    }
+}
+```
+
+#### 异常响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"USH.IoT.Device.Control",
+        "name":"DecreaseWindSpeedResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "errorCode":"USH.ERROR.DEVICE_NOT_FOUND",
+        "errorMessage":"device not found"
+    }
+}
+```
+
