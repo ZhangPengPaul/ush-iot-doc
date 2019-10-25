@@ -49,3 +49,15 @@ USH智能家居接入流程分为同步与异步两种模式
 
 ![&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#x6D41;&#x7A0B;](.gitbook/assets/ush-iot-sync.jpg)
 
+{% hint style="info" %}
+协议参考[USH IoT接入协议](ush-iot-jie-ru-xie-yi/)
+{% endhint %}
+
+### 异步模式
+
+![&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#x6D41;&#x7A0B;](.gitbook/assets/ush-iot-async.jpg)
+
+{% hint style="info" %}
+协议参考[USH IoT接入协议](ush-iot-jie-ru-xie-yi/)
+{% endhint %}
+
