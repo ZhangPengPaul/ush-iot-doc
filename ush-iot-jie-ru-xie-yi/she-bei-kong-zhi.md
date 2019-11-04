@@ -239,8 +239,8 @@ brightness信息说明
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| value | String | 灯光亮度值，根据valueType不同，含义不同，//TODO，MAX，MIN等待定义 | true |
-| valueType | String | value类型，有如下几种：int（整数类型），percent（百分比），//TODO，MAX，MIN等待定义 | true |
+| value | String | 灯光亮度值，根据valueType不同，含义不同 | true |
+| valueType | String | value类型，有如下几种：int（整数类型），percent（百分比），string（字符串类型） | true |
 
 #### 请求示例
 
@@ -561,8 +561,8 @@ temperature信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| value | String | 温度值，根据valueType不同，含义不同，//TODO，MAX，MIN等待定义 | true |
-| valueType | String | value类型，有如下几种：int（整数类型），percent（百分比），//TODO，MAX，MIN等待定义 | true |
+| value | String | 温度值，根据valueType不同，含义不同 | true |
+| valueType | String | value类型，有如下几种：int（整数类型），percent（百分比），string（字符串类型） | true |
 
 #### 请求示例
 
@@ -887,8 +887,8 @@ windSpeed信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| value | String | 风速值，根据valueType不同，含义不同，//TODO，HIGH，LOW等待定义 | true |
-| valueType | String | value类型，有如下几种：int（整数类型），//TODO，HIGH，LOW等待定义 | true |
+| value | String | 风速值，根据valueType不同，含义不同 | true |
+| valueType | String | value类型，有如下几种：int（整数类型），string（字符串类型） | true |
 
 #### 请求示例
 
@@ -1131,8 +1131,8 @@ volume信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| value | String | 音量值，根据valueType不同，含义不同，//TODO，MAX，MIN等待定义 | true |
-| valueType | String | value类型，有如下几种：int（整数类型），//TODO，HIGH，LOW等待定义 | true |
+| value | String | 音量值，根据valueType不同 | true |
+| valueType | String | value类型，有如下几种：int（整数类型），string（字符串类型） | true |
 
 #### 请求示例
 
@@ -1331,12 +1331,6 @@ deltaVolume信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
-
-| 参数名 | 参数类型 | 参数说明 | 是否必填 |
-| :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
-| errorCode | String | 错误码，详见//TODO | true |
-| errorMessage | String | 错误信息描述，详见//TODO | true |
 
 #### 响应示例
 
