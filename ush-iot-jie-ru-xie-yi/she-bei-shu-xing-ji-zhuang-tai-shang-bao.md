@@ -23,6 +23,12 @@ http://gw-std.hivoice.cn/v2/iot/status-report
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
+| devices | JSON Object Array | 设备列表 | true |
+
+设备devices信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
 | deviceId | String | 设备唯一ID | true |
 | properties | JSON Object Array | 设备变更的属性状态，详见：[设备属性说明](she-bei-shu-xing-shuo-ming.md) | false |
 
@@ -54,15 +60,32 @@ http://gw-std.hivoice.cn/v2/iot/status-report
 
 ```javascript
 {
-    "deviceId":"xxxxxxxxxxxxxxx",
-    "properties":[
+    "devices":[
         {
-            "name":"PowerState",
-            "value":"ON"
+            "deviceId":"xxxxxxxxxxxxxxx",
+            "properties":[
+                {
+                    "name":"PowerState",
+                    "value":"ON"
+                },
+                {
+                    "name":"Temperature",
+                    "value":"20"
+                }
+            ]
         },
         {
-            "name":"Temperature",
-            "value":"20"
+            "deviceId":"xxxxxxxxxxxxxxx",
+            "properties":[
+                {
+                    "name":"PowerState",
+                    "value":"ON"
+                },
+                {
+                    "name":"Temperature",
+                    "value":"20"
+                }
+            ]
         }
     ]
 }

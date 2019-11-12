@@ -6,7 +6,7 @@ description: namespace及name详细说明
 
 ## name信息说明
 
-### 设备发现（对应USH.IoT.Device.Discovery）
+### 设备发现（对应UniOS.IoT.Device.Discovery）
 
 | name | 说明 |
 | :--- | :--- |
@@ -37,7 +37,7 @@ description: namespace及name详细说明
 | [IncreaseChannel](she-bei-kong-zhi.md#increasechannel-qing-qiu) | 下一个频道 |
 | [DecreaseChannel](she-bei-kong-zhi.md#decreasechannel-qing-qiu) | 上一个频道 |
 
-### 设备属性及状态查询（对应USH.IoT.Device.Query）
+### 设备属性及状态查询（对应UniOS.IoT.Device.Query）
 
 | name | 说明 | 返回结果说明 |
 | :--- | :--- | :--- |

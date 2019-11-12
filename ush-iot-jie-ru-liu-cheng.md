@@ -38,7 +38,7 @@ USH对IoT云接入认证需遵循OAuth2.0接入规范，参考[https://oauth.net
 >      |        |--(E)----- Access Token ------>|    Resource   |
 >      |        |                               |     Server    |
 >      |        |<-(F)--- Protected Resource ---|               |
->      +--------+                               +---------------+
+>      +--------+                               +---------------+    
 > ```
 
 ## 二.智能家居接入流程
@@ -53,11 +53,19 @@ USH智能家居接入流程分为同步与异步两种模式
 协议参考[USH IoT接入协议](ush-iot-jie-ru-xie-yi/)
 {% endhint %}
 
+{% hint style="warning" %}
+上述6-7步，IoT厂商需有重试机制保证数据同步成功
+{% endhint %}
+
 ### 异步模式
 
 ![&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#x6D41;&#x7A0B;](.gitbook/assets/ush-iot-async.jpg)
 
 {% hint style="info" %}
 协议参考[USH IoT接入协议](ush-iot-jie-ru-xie-yi/)
+{% endhint %}
+
+{% hint style="warning" %}
+上述6-7步，IoT厂商需有重试机制保证数据同步成功
 {% endhint %}
 

@@ -14,7 +14,7 @@ description: 查询设备的属性及状态信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Query |
+| namespace | UniOS.IoT.Device.Query |
 | name | All |
 
 #### payload信息
@@ -29,7 +29,7 @@ description: 查询设备的属性及状态信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Query",
+        "namespace":"UniOS.IoT.Device.Query",
         "name":"All",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -47,7 +47,7 @@ description: 查询设备的属性及状态信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Query |
+| namespace | UniOS.IoT.Device.Query |
 | name | AllResponse |
 
 #### payload响应信息
@@ -86,7 +86,7 @@ description: 查询设备的属性及状态信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Query",
+        "namespace":"UniOS.IoT.Device.Query",
         "name":"AllResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -117,7 +117,7 @@ description: 查询设备的属性及状态信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Query |
+| namespace | UniOS.IoT.Device.Query |
 | name | Temperature，其他属性查询参考：[name说明](namespace-ji-name-xiang-xi-shuo-ming.md#she-bei-shu-xing-ji-zhuang-tai-cha-xun-dui-ying-ushiotdevicequery) |
 
 #### payload信息
@@ -132,7 +132,7 @@ description: 查询设备的属性及状态信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Query",
+        "namespace":"UniOS.IoT.Device.Query",
         "name":"Temperature",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -150,7 +150,7 @@ description: 查询设备的属性及状态信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Query |
+| namespace | UniOS.IoT.Device.Query |
 | name | TemperatureResponse，（其他属性查询响应name一律为“请求name值+Response”，如：查询颜色，请求name=Color，则响应name=ColorResponse） |
 
 #### payload响应信息
@@ -185,7 +185,7 @@ description: 查询设备的属性及状态信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Query",
+        "namespace":"UniOS.IoT.Device.Query",
         "name":"TemperatureResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
