@@ -16,7 +16,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | TurnOn |
 
 #### payload信息
@@ -31,7 +31,7 @@ description: 设备控制对智能家居设备进行控制
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"TurnOn",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -51,7 +51,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | TurnOnResponse |
 
 #### payload响应信息
@@ -65,7 +65,7 @@ description: 设备控制对智能家居设备进行控制
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"TurnOnResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -84,7 +84,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | TurnOff |
 
 #### payload信息
@@ -99,7 +99,7 @@ description: 设备控制对智能家居设备进行控制
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"TurnOff",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -119,7 +119,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | TurnOffResponse |
 
 #### payload响应信息
@@ -133,7 +133,7 @@ description: 设备控制对智能家居设备进行控制
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"TurnOffResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -152,7 +152,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | Pause |
 
 #### payload信息
@@ -167,7 +167,7 @@ description: 设备控制对智能家居设备进行控制
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"Pause",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -187,7 +187,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | PauseResponse |
 
 #### payload响应信息
@@ -201,7 +201,7 @@ description: 设备控制对智能家居设备进行控制
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"PauseResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -224,7 +224,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetBrightness |
 
 #### payload信息
@@ -247,7 +247,7 @@ brightness信息说明
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetBrightness",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -271,7 +271,7 @@ brightness信息说明
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetBrightnessResponse |
 
 #### payload响应信息
@@ -285,7 +285,7 @@ brightness信息说明
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetBrightnessResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -304,7 +304,7 @@ brightness信息说明
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseBrightness |
 
 #### payload信息
@@ -327,7 +327,7 @@ deltaBrightness信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseBrightness",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -351,7 +351,7 @@ deltaBrightness信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseBrightnessResponse |
 
 #### payload响应信息
@@ -365,7 +365,7 @@ deltaBrightness信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseBrightnessResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -384,7 +384,7 @@ deltaBrightness信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseBrightness |
 
 #### payload信息
@@ -407,7 +407,7 @@ deltaBrightness信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseBrightness",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -431,7 +431,7 @@ deltaBrightness信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseBrightnessResponse |
 
 #### payload响应信息
@@ -445,7 +445,7 @@ deltaBrightness信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseBrightnessResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -464,7 +464,7 @@ deltaBrightness信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetColor |
 
 #### payload信息
@@ -486,7 +486,7 @@ color信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetColor",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -509,7 +509,7 @@ color信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetColorResponse |
 
 #### payload响应信息
@@ -523,7 +523,7 @@ color信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetColorResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -546,7 +546,7 @@ color信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetTemperature |
 
 #### payload信息
@@ -569,7 +569,7 @@ temperature信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetTemperature",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -593,7 +593,7 @@ temperature信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetTemperatureResponse |
 
 #### payload响应信息
@@ -607,7 +607,7 @@ temperature信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetTemperatureResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -626,7 +626,7 @@ temperature信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseTemperature |
 
 #### payload信息
@@ -649,7 +649,7 @@ deltaTemperature信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseTemperature",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -673,7 +673,7 @@ deltaTemperature信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseTemperatureResponse |
 
 #### payload响应信息
@@ -687,7 +687,7 @@ deltaTemperature信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseTemperatureResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -706,7 +706,7 @@ deltaTemperature信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseTemperature |
 
 #### payload信息
@@ -729,7 +729,7 @@ deltaTemperature信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseTemperature",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -753,7 +753,7 @@ deltaTemperature信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseTemperatureResponse |
 
 #### payload响应信息
@@ -767,7 +767,7 @@ deltaTemperature信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseTemperatureResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -790,7 +790,7 @@ deltaTemperature信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetMode |
 
 #### payload信息
@@ -798,7 +798,7 @@ deltaTemperature信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String | 设备唯一ID | true |
+| deviceId | String | 设备唯一ID | false |
 | mode | JSON Object | 模式信息 | true |
 
 mode信息
@@ -812,7 +812,7 @@ mode信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetMode",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -835,21 +835,21 @@ mode信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetModeResponse |
 
 #### payload响应信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
+| deviceId | String | 设备唯一ID | false |
 
 #### 响应示例
 
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetWindSpeedResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -872,7 +872,7 @@ mode信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetWindSpeed |
 
 #### payload信息
@@ -895,7 +895,7 @@ windSpeed信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetWindSpeed",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -919,7 +919,7 @@ windSpeed信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetWindSpeedResponse |
 
 #### payload响应信息
@@ -933,7 +933,7 @@ windSpeed信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetWindSpeedResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -952,7 +952,7 @@ windSpeed信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseWindSpeed |
 
 #### payload信息
@@ -975,7 +975,7 @@ deltaWindSpeed信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseWindSpeed",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -999,7 +999,7 @@ deltaWindSpeed信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseWindSpeedResponse |
 
 #### payload响应信息
@@ -1013,7 +1013,7 @@ deltaWindSpeed信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseWindSpeedResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1032,7 +1032,7 @@ deltaWindSpeed信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseWindSpeed |
 
 #### payload信息
@@ -1055,7 +1055,7 @@ deltaWindSpeed信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseWindSpeed",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1079,7 +1079,7 @@ deltaWindSpeed信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseWindSpeedResponse |
 
 #### payload响应信息
@@ -1093,7 +1093,7 @@ deltaWindSpeed信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseWindSpeedResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1116,7 +1116,7 @@ deltaWindSpeed信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetVolume |
 
 #### payload信息
@@ -1139,7 +1139,7 @@ volume信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetVolume",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1163,7 +1163,7 @@ volume信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetVolumeResponse |
 
 #### payload响应信息
@@ -1177,7 +1177,7 @@ volume信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetVolumeResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1196,7 +1196,7 @@ volume信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseVolume |
 
 #### payload信息
@@ -1219,7 +1219,7 @@ deltaVolume信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseVolume",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1243,7 +1243,7 @@ deltaVolume信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseVolumeResponse |
 
 #### payload响应信息
@@ -1257,7 +1257,7 @@ deltaVolume信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseVolumeResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1276,7 +1276,7 @@ deltaVolume信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseVolume |
 
 #### payload信息
@@ -1299,7 +1299,7 @@ deltaVolume信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseVolume",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1323,7 +1323,7 @@ deltaVolume信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseVolumeResponse |
 
 #### payload响应信息
@@ -1337,7 +1337,7 @@ deltaVolume信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseVolumeResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1360,7 +1360,7 @@ deltaVolume信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetChannel |
 
 #### payload信息
@@ -1383,7 +1383,7 @@ channel信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetChannel",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1407,7 +1407,7 @@ channel信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | SetChannelResponse |
 
 #### payload响应信息
@@ -1421,7 +1421,7 @@ channel信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"SetChannelResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1440,7 +1440,7 @@ channel信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseChannel |
 
 #### payload信息
@@ -1463,7 +1463,7 @@ deltaChannel信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseChannel",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1487,7 +1487,7 @@ deltaChannel信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | IncreaseChannelResponse |
 
 #### payload响应信息
@@ -1501,7 +1501,7 @@ deltaChannel信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"IncreaseChannelResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1520,7 +1520,7 @@ deltaChannel信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseChannel |
 
 #### payload信息
@@ -1543,7 +1543,7 @@ deltaChannel信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseChannel",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1567,7 +1567,7 @@ deltaChannel信息
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | DecreaseChannelResponse |
 
 #### payload响应信息
@@ -1581,7 +1581,7 @@ deltaChannel信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseChannelResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1614,7 +1614,7 @@ deltaChannel信息
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseChannelResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -1642,8 +1642,14 @@ http://gw-std.hivoice.cn/v2/iot/control-report
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String | 设备唯一ID | true |
+| devices | JSON Object Array | 设备列表 | true |
 | controlResult | boolean | 控制是否成功 | true |
+
+设备devices信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
 | properties | JSON Object Array | 设备变更的属性状态，详见：[设备属性说明](she-bei-shu-xing-shuo-ming.md) | false |
 
 设备属性properties信息
@@ -1674,18 +1680,35 @@ http://gw-std.hivoice.cn/v2/iot/control-report
 
 ```javascript
 {
-    "deviceId":"xxxxxxxxxxxxxxx",
-    "controlResult":true,
-    "properties":[
+    "devices":[
         {
-            "name":"PowerState",
-            "value":"ON"
+            "deviceId":"xxxxxxxxxxxxxxx",
+            "properties":[
+                {
+                    "name":"PowerState",
+                    "value":"ON"
+                },
+                {
+                    "name":"Temperature",
+                    "value":"20"
+                }
+            ]
         },
         {
-            "name":"Temperature",
-            "value":"20"
+            "deviceId":"xxxxxxxxxxxxxxx",
+            "properties":[
+                {
+                    "name":"PowerState",
+                    "value":"ON"
+                },
+                {
+                    "name":"Temperature",
+                    "value":"20"
+                }
+            ]
         }
-    ]
+    ],
+    "controlResult":true
 }
 ```
 
@@ -1746,7 +1769,7 @@ http://gw-std.hivoice.cn/v2/iot/control-report
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Control |
+| namespace | UniOS.IoT.Device.Control |
 | name | ErrorResponse |
 
 #### payload信息
@@ -1762,7 +1785,7 @@ http://gw-std.hivoice.cn/v2/iot/control-report
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"DecreaseChannelResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"

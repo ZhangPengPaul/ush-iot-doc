@@ -30,7 +30,7 @@ description: 协议简介
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Control",
+        "namespace":"UniOS.IoT.Device.Control",
         "name":"TurnOn",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":1
@@ -51,9 +51,9 @@ namespace参数说明
 
 | namespace | 说明 |
 | :--- | :--- |
-| USH.IoT.Device.Control | 设备控制 |
-| USH.IoT.Device.Discovery | 设备发现 |
-| USH.IoT.Device.Query | 设备属性、状态查询 |
+| UniOS.IoT.Device.Control | 设备控制 |
+| UniOS.IoT.Device.Discovery | 设备发现 |
+| UniOS.IoT.Device.Query | 设备属性、状态查询 |
 
 name参数说明
 

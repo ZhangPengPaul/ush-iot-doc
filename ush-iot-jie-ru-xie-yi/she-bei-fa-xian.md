@@ -12,7 +12,7 @@ description: 用于查找用户可用的设备、可以使用的场景模式等�
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Discovery |
+| namespace | UniOS.IoT.Device.Discovery |
 | name | DiscoveryDevices |
 
 #### payload信息
@@ -27,7 +27,7 @@ description: 用于查找用户可用的设备、可以使用的场景模式等�
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Discovery",
+        "namespace":"UniOS.IoT.Device.Discovery",
         "name":"DiscoveryDevices",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
@@ -45,7 +45,7 @@ description: 用于查找用户可用的设备、可以使用的场景模式等�
 
 | 参数名 | 参数值 |
 | :--- | :--- |
-| namespace | USH.IoT.Device.Discovery |
+| namespace | UniOS.IoT.Device.Discovery |
 | name | DiscoveryDevicesResponse |
 
 #### payload信息
@@ -97,7 +97,7 @@ description: 用于查找用户可用的设备、可以使用的场景模式等�
 ```javascript
 {
     "header":{
-        "namespace":"USH.IoT.Device.Discovery",
+        "namespace":"UniOS.IoT.Device.Discovery",
         "name":"DiscoveryDevicesResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
