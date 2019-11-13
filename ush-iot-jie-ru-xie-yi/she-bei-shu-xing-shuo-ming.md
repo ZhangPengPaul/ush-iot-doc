@@ -71,3 +71,37 @@ description: 列举当前所支持的设备所有属性值
 | LEFT | 向左 |
 | RIGHT | 向右 |
 
+### 区域（zone）
+
+| zone | 说明 |
+| :--- | :--- |
+| BED\_ROOM | 卧室\|卧房\|睡房\|南卧\|北卧\|南边卧室\|北边卧室\|房间\|房 |
+| BED\_MASTER\_ROOM | 主卧\|主卧室\|主卧房 |
+| BED\_AUX\_ROOM | 次卧\|客卧\|次卧房\|次卧室 |
+| LIVING\_ROOM | 客厅\|起居室\|会客厅\|会客室 |
+| STUDY\_ROOM | 书房\|图书室\|学习室 |
+| REST\_ROOM | 卫生间\|洗手间\|厕所 |
+| BATH\_MASTER\_ROOM | 主卫生间\|主卫 |
+| BATH\_GUEST\_ROOM | 客卫生间\|客卫\|次卫 |
+| KITCHEN | 厨房 |
+| DINING\_ROOM | 餐厅\|饭厅 |
+| BALCONY | 阳台 |
+| CLOAKROOM | 衣帽间 |
+| KIDS\_ROOM | 儿童房 |
+| OLDER\_ROOM | 老人房 |
+| HOUSEKEEPER\_ROOM | 保姆房 |
+| STAIRCASE\_ROOM | 楼梯间 |
+| GARDEN | 花园 |
+| GARAGE | 车库 |
+| BASEMENT | 地下室 |
+| FRONT\_YARD | 前院 |
+| PIANO\_ROOM | 琴房 |
+| PORCH | 玄关 |
+| THE\_BAR | 吧台\|小吧台 |
+| TERRACE | 露台 |
+| BATHROOM | 浴室\|盥洗室\|洗澡间\|卫浴 |
+| CORRIDOR | 走廊\|过道\|走道 |
+| STORAGE\_ROOM | 储物间\|储物室\|储藏间\|储藏室 |
+| VIDEO\_ROOM | 影音室 |
+| ENTERTAINMENT\_ROOM | 娱乐室\|棋牌室\|麻将室\|麻将房\|棋牌 |
+

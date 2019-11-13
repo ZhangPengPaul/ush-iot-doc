@@ -63,7 +63,7 @@ description: 用于查找用户可用的设备、可以使用的场景模式等�
 | deviceName | String | 设备名称 | true |
 | brand | String | 设备品牌 | true |
 | model | String | 设备型号 | true |
-| zone | String | 所在位置 | false |
+| zone | String | 所在位置，详见： | false |
 | icon | String | 设备图标URL | true |
 | properties | JSON Object Array | 设备支持的属性状态列表，详见：[设备属性说明](she-bei-shu-xing-shuo-ming.md) | true |
 | actions | JSON String Array | 设备支持的操作，详见：[设备操作说明](namespace-ji-name-xiang-xi-shuo-ming.md#she-bei-kong-zhi-dui-ying-ushiotdevicecontrol) | true |
