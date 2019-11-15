@@ -12,4 +12,5 @@
   * [设备列表更新通知](ush-iot-jie-ru-xie-yi/she-bei-lie-biao-geng-xin-tong-zhi.md)
   * [支持的设备列表](ush-iot-jie-ru-xie-yi/zhi-chi-de-she-bei-lie-biao.md)
   * [设备属性说明](ush-iot-jie-ru-xie-yi/she-bei-shu-xing-shuo-ming.md)
+* [授权方案](shou-quan-fang-an.md)
 
