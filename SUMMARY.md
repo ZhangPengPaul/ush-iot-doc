@@ -13,4 +13,5 @@
   * [支持的设备列表](ush-iot-jie-ru-xie-yi/zhi-chi-de-she-bei-lie-biao.md)
   * [设备属性说明](ush-iot-jie-ru-xie-yi/she-bei-shu-xing-shuo-ming.md)
 * [授权方案](shou-quan-fang-an.md)
+* [更新日志](geng-xin-ri-zhi.md)
 
