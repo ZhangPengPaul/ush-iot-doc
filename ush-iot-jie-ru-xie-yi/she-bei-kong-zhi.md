@@ -1819,7 +1819,7 @@ body信息
 {
     "header":{
         "namespace":"UniOS.IoT.Device.Control",
-        "name":"DecreaseChannelResponse",
+        "name":"ErrorResponse",
         "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "payloadVersion":"1"
     },
