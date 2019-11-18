@@ -202,3 +202,51 @@ description: 查询设备的属性及状态信息
 }
 ```
 
+## 错误响应信息
+
+异常错误响应信息，错误情况下返回此响应内容
+
+### 错误响应
+
+#### header信息
+
+| 参数名 | 参数值 |
+| :--- | :--- |
+| namespace | UniOS.IoT.Device.Query |
+| name | ErrorResponse |
+
+#### payload信息
+
+| 参数名 | 参数类型 | 参数说明 | 是否必填 |
+| :--- | :--- | :--- | :--- |
+| deviceId | String | 设备唯一ID | true |
+| errorCode | String | 错误码，详见：错误码 | true |
+| errorMessage | String | 错误信息，详见：错误码 | true |
+
+#### 响应示例
+
+```javascript
+{
+    "header":{
+        "namespace":"UniOS.IoT.Device.Query",
+        "name":"ErrorResponse",
+        "requestId":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "payloadVersion":"1"
+    },
+    "payload":{
+        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx",
+        "errorCode":"DEVICE_NOT_FOUND",
+        "errorMessage":"device not found"
+    }
+}
+```
+
+### 错误码
+
+| errorCode | errorMessage | 说明 |
+| :--- | :--- | :--- |
+| ILLEGAL\_PARAMS | illegal  params | 请求参数非法 |
+| DEVICE\_NOT\_FOUND | device not found | IoT设备不存在 |
+| ILLEGAL\_ACCESS\_TOKEN | illegal access token | access token失效或不存在 |
+| SERVICE\_ERROR | 具体错误信息 | IoT云服务异常信息 |
+
