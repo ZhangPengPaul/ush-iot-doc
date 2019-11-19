@@ -158,3 +158,7 @@ access\_token有效期请设置成1天以上（2-3天最佳）
 }
 ```
 
+{% hint style="info" %}
+刷新token后，原未过期token建议保留有效期半小时
+{% endhint %}
+

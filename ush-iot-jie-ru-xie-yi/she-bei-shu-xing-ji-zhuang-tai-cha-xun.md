@@ -245,6 +245,7 @@ description: 查询设备的属性及状态信息
 
 | errorCode | errorMessage | 说明 |
 | :--- | :--- | :--- |
+| ILLEGAL\_PROPERTY | illegal property | 非法的属性参数或设备不支持此属性 |
 | ILLEGAL\_PARAMS | illegal  params | 请求参数非法 |
 | DEVICE\_NOT\_FOUND | device not found | IoT设备不存在 |
 | ILLEGAL\_ACCESS\_TOKEN | illegal access token | access token失效或不存在 |
