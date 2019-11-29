@@ -4,6 +4,12 @@ description: 文档更新日志
 
 # 更新日志
 
+## 2019-11-29
+
+### 🔨 Changed
+
+* 修改控制协议请求及响应的deviceId数据类型，由String改为String Array，既协议支持设备批量操作
+
 ## 2019-11-19
 
 ### ✨ Added
