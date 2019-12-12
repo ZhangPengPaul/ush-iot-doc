@@ -6,9 +6,9 @@ description: 详细介绍IoT厂商的授权方案及流程
 
 ## 概述
 
-采用通用的OAuth2.0的开放协议授权（**目前仅支持授权码模式**），可以让USH在IoT厂商的授权下访问资源，协议规范：[https://oauth.net/2/](https://oauth.net/2/)
+采用通用的OAuth2.0的开放协议授权（当前支持授权码模式及客户端模式），可以让USH在IoT厂商的授权下访问资源，协议规范：[https://oauth.net/2/](https://oauth.net/2/)
 
-## 鉴权流程
+## 鉴权流程（授权码模式）
 
 1. IoT厂商为USH分配一个授权应用，获得相应的client id及client secret
 2. USH向IoT厂商发起一个授权请求
@@ -161,4 +161,64 @@ access\_token有效期请设置成1天以上（2-3天最佳）
 {% hint style="info" %}
 刷新token后，原未过期token建议保留有效期半小时
 {% endhint %}
+
+## 鉴权流程（客户端模式）
+
+1. IoT厂商为USH分配一个授权应用，获得相应的client id及client secret
+2. USH向IoT厂商发起一个授权请求
+3. USH调用IoT厂商获取token URL，换取access token
+4. USH使用access token访问IoT厂商提供的服务
+
+## 示例
+
+IoT厂商获取tokenURL为：[http://www.xxxx.com/auth/token](http://www.xxxx.com/auth/token)
+
+### 1.获取token
+
+```http
+http://www.xxxx.com/auth/token?grant_type=client_credentials
+&client_id=client_1&client_secret=secret
+```
+
+#### 1.1 请求参数说明
+
+| 参数名 | 说明 |
+| :--- | :--- |
+| grant\_type | 授权类型，固定值client\_credentials |
+| client\_id | IoT厂商分配的应用id |
+| client\_secret | IoT厂商分配应用秘钥 |
+
+#### 1.2 正确响应结果（响应格式必须为application/json）
+
+| 参数名 | 参数类型 | 参数说明 |
+| :--- | :--- | :--- |
+| access\_token | String | 访问令牌 |
+| token\_type | String | 令牌类型 |
+| expires\_in | long | 令牌过期时间，长度为秒 |
+
+#### 1.3 正确响应示例
+
+```javascript
+{
+    "access_token":"10337f46-fe9b-4914-9f1b-15d3bfd6227b",
+    "token_type":"bearer",
+    "expires_in":7200
+}
+```
+
+#### 1.4 错误响应结果（响应格式必须为application/json）
+
+| 参数名 | 参数类型 | 参数说明 |
+| :--- | :--- | :--- |
+| error | String | 错误响应码 |
+| error\_description | String | 错误详情描述 |
+
+#### 1.5 错误响应示例
+
+```javascript
+{
+    "error":"errorCode",
+    "error_description":"description"
+}
+```
 
