@@ -4,6 +4,13 @@ description: 文档更新日志
 
 # 更新日志
 
+## 2020-03-05
+
+### 🔨 Changed
+
+* 设备控制协议中，调整`deviceId` 字段名为`deviceIds` 
+* 调整API网关接口地址信息
+
 ## 2019-12-12
 
 ### ✨ Added

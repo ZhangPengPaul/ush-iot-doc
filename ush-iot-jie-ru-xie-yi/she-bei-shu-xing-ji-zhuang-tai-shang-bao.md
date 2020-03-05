@@ -17,7 +17,7 @@ POST
 
 #### URL
 
-http://gw-std.hivoice.cn/v2/iot/status-report
+http://gw-std.hivoice.cn/device/v2/iot/status-report
 
 #### 请求参数
 

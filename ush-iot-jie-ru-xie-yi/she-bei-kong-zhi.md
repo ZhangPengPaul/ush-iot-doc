@@ -61,7 +61,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -74,7 +74,7 @@ description: 设备控制对智能家居设备进行控制
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -98,7 +98,7 @@ description: 设备控制对智能家居设备进行控制
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 请求示例
 
@@ -112,7 +112,7 @@ description: 设备控制对智能家居设备进行控制
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -135,7 +135,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -148,7 +148,7 @@ description: 设备控制对智能家居设备进行控制
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -172,7 +172,7 @@ description: 设备控制对智能家居设备进行控制
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 请求示例
 
@@ -186,7 +186,7 @@ description: 设备控制对智能家居设备进行控制
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -209,7 +209,7 @@ description: 设备控制对智能家居设备进行控制
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -222,7 +222,7 @@ description: 设备控制对智能家居设备进行控制
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -250,7 +250,7 @@ description: 设备控制对智能家居设备进行控制
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | brightness | JSON Object | 亮度控制信息 | true |
 
 brightness信息说明
@@ -272,7 +272,7 @@ brightness信息说明
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -299,7 +299,7 @@ brightness信息说明
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -312,7 +312,7 @@ brightness信息说明
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -336,7 +336,7 @@ brightness信息说明
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaBrightness | JSON Object | 亮度变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaBrightness信息
@@ -358,7 +358,7 @@ deltaBrightness信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -385,7 +385,7 @@ deltaBrightness信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -398,7 +398,10 @@ deltaBrightness信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":"xxxxxxxxxxxxxxxxxxxxxx"
+        "deviceIds":[
+            "xxxxxxxxxxxxxxxxxxxxxx",
+            "xxxxxxxxxxxxxxxxxxxxxx"
+        ]
     }
 }
 ```
@@ -419,7 +422,7 @@ deltaBrightness信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaBrightness | JSON Object | 亮度变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaBrightness信息
@@ -441,7 +444,7 @@ deltaBrightness信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -468,7 +471,7 @@ deltaBrightness信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -481,7 +484,7 @@ deltaBrightness信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -505,7 +508,7 @@ deltaBrightness信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | color | JSON Object | 设置颜色信息 | true |
 
 color信息
@@ -526,7 +529,7 @@ color信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -552,7 +555,7 @@ color信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -565,7 +568,7 @@ color信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -593,7 +596,7 @@ color信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId Array | String | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | temperature | JSON Object | 温度信息 | true |
 
 temperature信息
@@ -615,7 +618,7 @@ temperature信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -642,7 +645,7 @@ temperature信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -655,7 +658,7 @@ temperature信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -679,7 +682,7 @@ temperature信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaTemperature | JSON Object | 温度变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaTemperature信息
@@ -701,7 +704,7 @@ deltaTemperature信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -728,7 +731,7 @@ deltaTemperature信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -741,7 +744,7 @@ deltaTemperature信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -765,7 +768,7 @@ deltaTemperature信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaTemperature | JSON Object | 温度变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaTemperature信息
@@ -787,7 +790,7 @@ deltaTemperature信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -814,7 +817,7 @@ deltaTemperature信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -827,7 +830,7 @@ deltaTemperature信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -855,7 +858,7 @@ deltaTemperature信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | false |
+| deviceIds | String Array | 设备唯一ID | false |
 | mode | JSON Object | 模式信息 | true |
 
 mode信息
@@ -876,7 +879,7 @@ mode信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -902,7 +905,7 @@ mode信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | false |
+| deviceIds | String Array | 设备唯一ID | false |
 
 #### 响应示例
 
@@ -915,7 +918,7 @@ mode信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -943,7 +946,7 @@ mode信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | windSpeed | JSON Object | 风速信息 | true |
 
 windSpeed信息
@@ -965,7 +968,7 @@ windSpeed信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -992,7 +995,7 @@ windSpeed信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1005,7 +1008,7 @@ windSpeed信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1029,7 +1032,7 @@ windSpeed信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaWindSpeed | JSON Object | 风速变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaWindSpeed信息
@@ -1051,7 +1054,7 @@ deltaWindSpeed信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1078,7 +1081,7 @@ deltaWindSpeed信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1091,7 +1094,7 @@ deltaWindSpeed信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1115,7 +1118,7 @@ deltaWindSpeed信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaWindSpeed | JSON Object | 风速变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaWindSpeed信息
@@ -1137,7 +1140,7 @@ deltaWindSpeed信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1164,7 +1167,7 @@ deltaWindSpeed信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1177,7 +1180,7 @@ deltaWindSpeed信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1205,7 +1208,7 @@ deltaWindSpeed信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | volume | JSON Object | 音量信息 | true |
 
 volume信息
@@ -1227,7 +1230,7 @@ volume信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1254,7 +1257,7 @@ volume信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1267,7 +1270,7 @@ volume信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1291,7 +1294,7 @@ volume信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaVolume | JSON Object | 音量变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaVolume信息
@@ -1313,7 +1316,7 @@ deltaVolume信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1340,7 +1343,7 @@ deltaVolume信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1353,7 +1356,7 @@ deltaVolume信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1377,7 +1380,7 @@ deltaVolume信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaVolume | JSON Object | 音量变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaVolume信息
@@ -1399,7 +1402,7 @@ deltaVolume信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1426,7 +1429,7 @@ deltaVolume信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1439,7 +1442,7 @@ deltaVolume信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1467,7 +1470,7 @@ deltaVolume信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | channel | JSON Object | 频道信息 | true |
 
 channel信息
@@ -1489,7 +1492,7 @@ channel信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1516,7 +1519,7 @@ channel信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1529,7 +1532,7 @@ channel信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1553,7 +1556,7 @@ channel信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaChannel | JSON Object | 频道变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaChannel信息
@@ -1575,7 +1578,7 @@ deltaChannel信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1602,7 +1605,7 @@ deltaChannel信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1615,7 +1618,7 @@ deltaChannel信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1639,7 +1642,7 @@ deltaChannel信息
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
 | accessToken | String | IoT厂商接口访问access token | true |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | deltaChannel | JSON Object | 频道变化信息，如用户输入不包含具体增大的数值，此字段为null，IoT厂商根据自身情况设置默认变化步长 | false |
 
 deltaChannel信息
@@ -1661,7 +1664,7 @@ deltaChannel信息
     },
     "payload":{
         "accessToken":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1688,7 +1691,7 @@ deltaChannel信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 
 #### 响应示例
 
@@ -1701,7 +1704,7 @@ deltaChannel信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ]
@@ -1723,7 +1726,7 @@ deltaChannel信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | async | boolean | 是否异步模式 | true |
 
 #### 响应示例
@@ -1737,7 +1740,7 @@ deltaChannel信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],
@@ -1756,7 +1759,7 @@ POST
 
 #### URL
 
-http://gw-std.hivoice.cn/v2/iot/control-report
+http://gw-std.hivoice.cn/device/v2/iot/control-report
 
 #### 请求参数
 
@@ -1929,7 +1932,7 @@ body信息
 
 | 参数名 | 参数类型 | 参数说明 | 是否必填 |
 | :--- | :--- | :--- | :--- |
-| deviceId | String Array | 设备唯一ID | true |
+| deviceIds | String Array | 设备唯一ID | true |
 | errorCode | String | 错误码，详见：[错误码](she-bei-kong-zhi.md#cuo-wu-ma) | true |
 | errorMessage | String | 错误信息，详见：[错误码](she-bei-kong-zhi.md#cuo-wu-ma) | true |
 
@@ -1944,7 +1947,7 @@ body信息
         "payloadVersion":"1"
     },
     "payload":{
-        "deviceId":[
+        "deviceIds":[
             "xxxxxxxxxxxxxxxxxxxxxx",
             "xxxxxxxxxxxxxxxxxxxxxx"
         ],

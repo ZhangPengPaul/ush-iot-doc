@@ -16,7 +16,7 @@ POST
 
 #### URL
 
-http://gw-std.hivoice.cn/v2/iot/device-sync
+http://gw-std.hivoice.cn/device/v2/iot/device-sync
 
 #### 请求参数
 
